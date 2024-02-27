@@ -50,6 +50,7 @@ class IndexView(View):
         return render(request,"index.html",{"data":qs})
 
 class ProductDetailView(View):
+    
 
     def get(self,request,*args,**kwargs):
         id=kwargs.get("pk")
